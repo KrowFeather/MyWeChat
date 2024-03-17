@@ -1,0 +1,1907 @@
+/* BASIC STRUCTURE */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.inner {
+    background-color: white;
+    box-shadow: 0.5px 2px 15px gray;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* INNER LAYOUTS */
+.header {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.mainframe {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(233, 230, 230);
+    overflow: hidden;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 9%;
+    font-size: 16px;
+    line-height: 2.5rem;
+}
+
+.page-notifications {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-notifications-font {
+    background: url(./asset/notif_clicked.png) no-repeat center;
+    background-size: 25px 25px;
+    height: 70%;
+}
+
+.page-friends-font {
+    background: url(./asset/friends.png) no-repeat center;
+    background-size: 25px 25px;
+    height: 70%;
+}
+
+.page-explore-font {
+    background: url(./asset/exp.png) no-repeat center;
+    background-size: 25px 25px;
+    height: 70%;
+}
+
+.page-user-font {
+    background: url(./asset/me.png) no-repeat center;
+    background-size: 25px 25px;
+    height: 70%;
+}
+
+.page-notifications-text {
+    height: 30%;
+    line-height: 0.5rem;
+    font-size: 14px;
+    color: green;
+}
+
+.page-friends-text {
+    height: 30%;
+    line-height: 0.5rem;
+    font-size: 14px;
+}
+
+.page-explore-text {
+    height: 30%;
+    line-height: 0.5rem;
+    font-size: 14px;
+}
+
+.page-user-text {
+    height: 30%;
+    line-height: 0.5rem;
+    font-size: 14px;
+}
+
+.page-friends {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-explore {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-user {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    font-size: 18px;
+}
+
+.searcher-btn {
+    background: url(./asset/searcher.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+    height: 50%;
+    border: none;
+    font-size: 10px;
+}
+
+.add-ons {
+    background: url(./asset/addons.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+    height: 50%;
+    border: none;
+    font-size: 10px;
+    margin: 5px;
+}
+
+.posblocker {
+    width: 20%;
+    height: 100%;
+}
+
+.notif-frame {
+    height: 100%;
+    width: 100%;
+}
+
+.friend-frame {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.exp-frame {
+    height: 100%;
+    width: 100%;
+}
+
+.user-frame {
+    height: 100%;
+    width: 100%;
+}
+
+/* EXP_FRAME*/
+
+.friend-zone {
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.friend-zone:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friend-zone-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/friendzone.png) no-repeat center;
+    background-size: 28px 28px;
+}
+
+.friend-zone-text {
+    margin: auto 0;
+    width: 85%;
+}
+
+.friend-zone-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.container1 {
+    height: 16%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+
+.shipinhao {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    /* border-bottom: 0.5px solid lightgray; */
+}
+
+.shipinhao:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.shipinhao-right {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.shipinhao-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/shipinhao.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.shipinhao-text {
+    margin: auto 0;
+    width: 92%;
+}
+
+.shipinhao-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.livestream {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.livestream:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.livestream-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/livestream.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.livestream-text {
+    margin: auto 0;
+    width: 85%;
+}
+
+.livestream-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.container2 {
+    height: 16%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.scanner {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.scanner:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.scanner-right {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.scanner-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/scanner.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.scanner-text {
+    margin: auto 0;
+    width: 92%;
+}
+
+.scanner-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.music {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.music:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.music-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/music.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.music-text {
+    margin: auto 0;
+    width: 85%;
+}
+
+.music-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.container3 {
+    height: 16%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.havealook {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.havealook:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.havealook-right {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.havealook-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/wechat-havealook.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.havealook-text {
+    margin: auto 0;
+    width: 92%;
+}
+
+.havealook-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.search {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.search-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/wechat-search.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.search-text {
+    margin: auto 0;
+    width: 85%;
+}
+
+.search-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.container4 {
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.nearby {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nearby:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.nearby-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/wechat-nearby.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.nearby-text {
+    margin: auto 0;
+    width: 85%;
+}
+
+.nearby-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.container5 {
+    height: 16%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.shopping {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.shopping:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.shopping-right {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.shopping-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/wechat-shopping.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.shopping-text {
+    margin: auto 0;
+    width: 92%;
+}
+
+.shopping-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.games {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.games:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.games-right {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.games-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/wechat-games.png) no-repeat center;
+    background-size: 22px 22px;
+}
+
+.games-text {
+    margin: auto 0;
+    width: 92%;
+}
+
+.games-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+.container6 {
+    height: 8%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.mini-program {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mini-program:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.mini-program-sprite {
+    width: 10%;
+    height: 100%;
+    background: url(./asset/miniprogram.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.mini-program-text {
+    margin: auto 0;
+    width: 85%;
+}
+
+.mini-program-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 8%;
+}
+
+/* END_EXP_FRAME */
+
+
+/* NOTIF_FRAME */
+.notif-container-1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+
+}
+
+.notif-c1-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c1-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c1-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: column;
+}
+
+.notif-c1-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c1-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c1-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-2:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c2-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c2-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c2-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: column;
+    /* margin: auto 0; */
+}
+
+.notif-c2-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c2-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c2-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-3 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-3:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c3-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c3-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c3-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: column;
+}
+
+.notif-c3-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c3-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c3-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-4 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-4:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c4-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c4-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c4-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: column;
+}
+
+.notif-c4-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c4-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c4-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-5 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-5:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c5-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c5-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c5-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: column;
+}
+
+.notif-c5-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c5-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c5-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-6 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-6:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c6-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c6-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c6-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+    display: flex;
+    flex-direction: column;
+}
+
+.notif-c6-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c6-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c6-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-7 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-7:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c7-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c7-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c7-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+}
+
+.notif-c7-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c7-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c7-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-8 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-8:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c8-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c8-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c8-title {
+    width: 80%;
+    border-bottom: 0.5px solid rgb(214, 211, 211);
+}
+
+.notif-c8-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c8-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c8-time {
+    width: 10%;
+    border-bottom: 0.1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+.notif-container-9 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.notif-container-9:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.notif-c9-sprite {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-c9-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.notif-c9-title {
+    width: 80%;
+}
+
+.notif-c9-title-header {
+    height: 50%;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.notif-c9-title-content {
+    height: 50%;
+    font-size: 12px;
+    color: gray;
+}
+
+.notif-c9-time {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 2% 2%;
+    color: gray;
+}
+
+/* END_NOTIF_FRAME */
+
+
+
+/* FRIENDS_FRAME */
+.manager-top {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-friends {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.new-friends:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.new-friends-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/new-friends.png) no-repeat center;
+    background-size: 34px 34px;
+}
+
+.new-friends-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.new-friends-text {
+    margin: auto 0;
+}
+
+.chat-only-friends {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.chat-only-friends:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.chat-only-friends-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/chat-only.png) no-repeat center;
+    background-size: 34px 34px;
+}
+
+.chat-only-friends-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.chat-only-friends-text {
+    margin: auto 0;
+}
+
+.groups {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.groups:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.groups-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/group.png) no-repeat center;
+    background-size: 34px 34px;
+}
+
+.groups-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.groups-text {
+    margin: auto 0;
+}
+
+
+.tags {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.tags:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.tags-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/tags.png) no-repeat center;
+    background-size: 34px 34px;
+}
+
+.tags-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.tags-text {
+    margin: auto 0;
+}
+
+.gongzhonghao {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.gongzhonghao:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.gongzhonghao-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/gongzhonghao.png) no-repeat center;
+    background-size: 30px 30px;
+}
+
+.gongzhonghao-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.gongzhonghao-text {
+    margin: auto 0;
+}
+
+.spacer1 {
+    height: 4%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.business-contacts {
+    height: 14%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.wecom {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.wecom:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.wecom-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/wecom.png) no-repeat center;
+    background-size: 43px 43px;
+}
+
+.wecom-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    border-bottom: 0.1px solid lightgray;
+}
+
+.wecom-text {
+    margin: auto 0;
+}
+
+.YNU {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.YNU:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.YNU-sprite {
+    width: 15%;
+    background: url(./asset/friend-sprites/YNU.jpg) no-repeat center;
+    background-size: 34px 34px;
+}
+
+.YNU-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.YNU-text {
+    margin: auto 0;
+}
+
+.spacerA {
+    height: 4%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.friends-A {
+    height: 7%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.friends-A-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.friends-A-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friends-A-1-sprite {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-A-1-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.friends-A-1-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.friends-A-1-text {
+    margin: auto 0;
+}
+
+.spacerE {
+    height: 4%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.friends-E {
+    height: 7%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.friends-E-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.friends-E-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friends-E-1-sprite {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-E-1-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.friends-E-1-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.friends-E-1-text {
+    margin: auto 0;
+}
+
+.spacerF {
+    height: 4%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.friends-F {
+    height: 7%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.friends-F-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.friends-F-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friends-F-1-sprite {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-F-1-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.friends-F-1-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.friends-F-1-text {
+    margin: auto 0;
+}
+
+.spacerH {
+    height: 4%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.friends-H {
+    height: 7%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.friends-H-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.friends-H-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friends-H-1-sprite {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-H-1-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.friends-H-1-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.friends-H-1-text {
+    margin: auto 0;
+}
+
+.spacerJ {
+    height: 4%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.scrollbar{
+    z-index: 999;
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(83, 82, 82);
+    text-align: center;
+    font-size: 13px;
+    user-select: none;
+}
+/* END_FRIENDS_FRAME */
+
+
+/* USER_FRAME */
+.user-header {
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.user-header-left {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-header-right {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-header-upper {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.user-header-bottom {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.user-sprite {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.user-top-right {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.user-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.user-nickname {
+    height: 70%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.user-wechat-account {
+    color: gray;
+    font-size: 13px;
+    height: 50%;
+    line-height: 1.5rem;
+}
+
+.user-header-bottom-left {
+    width: 30%;
+    height: 100%;
+}
+
+.user-header-bottom-right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-status {
+    width: 20%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border: 0.1px solid lightgray;
+    border-radius: 15px;
+    height: 50%;
+}
+
+.user-status:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friend-status {
+    background: url(./asset/wechat-status.png) no-repeat center;
+    background-size: 12px 12px;
+    border: 0.1px solid lightgray;
+    border-radius: 30px;
+    width: 7%;
+    height: 50%;
+    margin-left: 5px;
+}
+
+.friend-status:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.user-QR-code {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-QR-code-sprite {
+    background: url(./asset/qrcode.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 60%;
+}
+
+.user-QR-code-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 25%;
+}
+
+.service {
+    height: 7%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.service:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.service-right {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+}
+
+.service-sprite {
+    background: url(./asset/wechat-pay.png) no-repeat center;
+    background-size: 22px 22px;
+    width: 12%;
+}
+
+.service-text {
+    margin: auto 0;
+    width: 90%;
+}
+
+.service-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 10%;
+}
+
+.more-func {
+    height: 28%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.collections {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.collections:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.collections-sprite {
+    background: url(./asset/wechat-collections.png) no-repeat center;
+    background-size: 22px 22px;
+    width: 12%;
+}
+
+.collections-right {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1px solid lightgray;
+    width: 88%;
+}
+
+.collections-text {
+    margin: auto 0;
+    width: 90%;
+}
+
+.collections-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 10%;
+}
+
+.photos {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.photos:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.photos-sprite {
+    background: url(./asset/wechat-photos.png) no-repeat center;
+    background-size: 24px 24px;
+    width: 12%;
+}
+
+.photos-right {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1px solid lightgray;
+    width: 88%;
+}
+
+.photos-text {
+    margin: auto 0;
+    width: 90%;
+}
+
+.photos-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 10%;
+}
+
+.cards {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.cards-sprite {
+    background: url(./asset/wechat-cards.png) no-repeat center;
+    background-size: 22px 22px;
+    width: 12%;
+}
+
+.cards-right {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1px solid lightgray;
+    width: 88%;
+}
+
+.cards-text {
+    margin: auto 0;
+    width: 90%;
+}
+
+.cards-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 10%;
+}
+
+.emojis {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.emojis:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.emojis-sprite {
+    background: url(./asset/wechat-emojis.png) no-repeat center;
+    background-size: 22px 22px;
+    width: 12%;
+}
+
+.emojis-right {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+}
+
+.emojis-text {
+    margin: auto 0;
+    width: 90%;
+}
+
+.emojis-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 10%;
+}
+
+.settings {
+    height: 7%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.settings:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.settings-right {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+}
+
+.settings-sprite {
+    background: url(./asset/settings.png) no-repeat center;
+    background-size: 22px 22px;
+    width: 12%;
+}
+
+.settings-text {
+    margin: auto 0;
+    width: 90%;
+}
+
+.settings-in {
+    background: url(./asset/enter_gray.png) no-repeat center;
+    background-size: 18px 18px;
+    width: 10%;
+}
+
+/* END_USER_FRAME */
