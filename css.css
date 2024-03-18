@@ -38,7 +38,7 @@
     width: 100%;
     height: 100%;
     background-color: rgb(233, 230, 230);
-    overflow: hidden;
+    position: relative;
 }
 
 .footer {
@@ -163,7 +163,16 @@
 .friend-frame {
     height: 100%;
     width: 100%;
-    position: relative;
+    /*position: relative;*/
+    overflow: scroll;
+}
+
+.notif-frame::-webkit-scrollbar{
+    display: none;
+}
+
+.friend-frame::-webkit-scrollbar{
+    display: none;
 }
 
 .exp-frame {
@@ -1240,7 +1249,7 @@
 }
 
 .spacer1 {
-    height: 4%;
+    height: 3%;
     background-color: lightgray;
     color: gray;
     font-size: 12px;
@@ -1314,7 +1323,7 @@
 }
 
 .spacerA {
-    height: 4%;
+    height: 3%;
     background-color: lightgray;
     color: gray;
     font-size: 12px;
@@ -1366,7 +1375,7 @@
 }
 
 .spacerE {
-    height: 4%;
+    height: 3%;
     background-color: lightgray;
     color: gray;
     font-size: 12px;
@@ -1418,7 +1427,7 @@
 }
 
 .spacerF {
-    height: 4%;
+    height: 3%;
     background-color: lightgray;
     color: gray;
     font-size: 12px;
@@ -1470,7 +1479,7 @@
 }
 
 .spacerH {
-    height: 4%;
+    height: 3%;
     background-color: lightgray;
     color: gray;
     font-size: 12px;
@@ -1522,7 +1531,7 @@
 }
 
 .spacerJ {
-    height: 4%;
+    height: 3%;
     background-color: lightgray;
     color: gray;
     font-size: 12px;
@@ -1530,7 +1539,98 @@
     align-items: center;
     padding-left: 4%;
 }
+.friends-J {
+    height: 7%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
 
+.friends-J-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.friends-J-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friends-J-1-sprite {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-J-1-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.friends-J-1-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.friends-J-1-text {
+    margin: auto 0;
+}
+
+.spacerM {
+    height: 3%;
+    background-color: lightgray;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+.friends-M {
+    height: 7%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+.friends-M-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.friends-M-1:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+}
+
+.friends-M-1-sprite {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends-M-1-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.friends-M-1-right {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.friends-M-1-text {
+    margin: auto 0;
+}
 .scrollbar{
     z-index: 999;
     position: absolute;
